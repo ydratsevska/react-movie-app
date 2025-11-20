@@ -1,12 +1,16 @@
 import './App.css'
 import Header from './Components/Header'
+import Footer from './Components/Footer'
+import Page from './Components/Page'
 
 function App() {
 
   return (
     <>
-      <div>
+      <div className='grid '>
         <Header /> 
+        <Page />
+        <Footer />
       </div>
     </>
   )
