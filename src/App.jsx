@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className='px-16 '>
+      <div className='flex flex-col px-16 mx-auto min-h-screen'>
         <Header /> 
         <Hero />
         <Footer />
