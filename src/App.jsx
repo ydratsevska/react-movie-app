@@ -1,15 +1,15 @@
 import './App.css'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import Page from './Components/Page'
+import Hero from './Components/Hero'
 
 function App() {
 
   return (
     <>
-      <div className='grid '>
+      <div className='px-16 '>
         <Header /> 
-        <Page />
+        <Hero />
         <Footer />
       </div>
     </>

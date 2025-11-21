@@ -1,5 +1,5 @@
 import React from "react";
-function Page() {
+function Hero() {
     return (
         <div>
             page
@@ -7,4 +7,4 @@ function Page() {
     )
 }
 
-export default Page;
+export default Hero;

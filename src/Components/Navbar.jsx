@@ -4,7 +4,7 @@ function Navbar() {
 return (
     
 
-<div className="navbar bg-base-100 shadow-sm flex justify-between px-16">
+<div className="navbar bg-base-100 shadow-sm flex justify-between ">
   <div className="flex">
     <a className="btn btn-ghost text-3xl font-bold">JMovie</a>
   </div>
