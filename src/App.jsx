@@ -5,7 +5,7 @@ import Hero from './Components/Hero'
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [err, setErr] = useState('')
+  const [err, setError] = useState('')
 
   const API_KEY = import.meta.env.VITE_OMDb_API_KEY;
   useEffect(
@@ -13,9 +13,19 @@ function App() {
         try {
           let url;
 
-          url = `http://www.omdbapi.com/?apikey=${API_KEY}&`
-        } catch {
+          url = `https://api.simkl.com/?apikey=${API_KEY}&`;
+          const res = await fetch(url);
 
+          if (!response.ok) {
+              throw new Error(`Failed fetching`);
+          }
+
+          const data = await response.json();
+
+          console.log(data);
+
+        } catch (err){
+            setError('Failed to fetch data')
         }
   }
   )
